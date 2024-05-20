@@ -1,6 +1,7 @@
 let button = document.querySelector('.answer')
-let input = document.querySelectorAll('.total')
+let input = document.querySelector('.block')
+let label = document.querySelector('.Temperature')
 
 button.addEventListener('click',()=>{
-    input.value = eval(`${input1.value}/${input2.value}*100^2`)
+    label.innerText = 'Temperature °F:' + (eval(`(${input.value}*9/5)+32`)).toFixed(1)
 })
